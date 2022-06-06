@@ -10,6 +10,7 @@ interface IProps {
   border?: BorderTheme;
   background?: boolean;
   shadow?: boolean;
+  className?: string;
 }
 const HealthGuidePanel = (props: IProps) => {
   const {
@@ -18,6 +19,7 @@ const HealthGuidePanel = (props: IProps) => {
     border = BorderTheme.none,
     background = false,
     shadow = false,
+    className,
   } = props;
   return (
     <div
@@ -26,7 +28,8 @@ const HealthGuidePanel = (props: IProps) => {
         `size-${size}`,
         `border-${border}`,
         `background-${background}`,
-        `shadow-${shadow}`
+        `shadow-${shadow}`,
+        `${className}`
       )}
     >
       {children}
