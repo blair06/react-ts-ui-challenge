@@ -9,12 +9,7 @@ import { InfoCardItemValue } from "./mockupData";
 const cn = cb.bind(styles);
 const InfoCard = () => {
   return (
-    <Panel
-      className={cn(`inCardPanel`)}
-      background={true}
-      shadow={true}
-      size={SizeTheme.large}
-    >
+    <Panel background={true} shadow={true} size={SizeTheme.large}>
       <div className={cn(`wrapper`, `infoCard`)}>
         {InfoCardItemValue.map((item, num) => {
           return <InfoCardItem key={num} data={item}></InfoCardItem>;

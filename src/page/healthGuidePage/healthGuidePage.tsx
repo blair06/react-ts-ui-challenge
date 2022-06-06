@@ -12,18 +12,17 @@ interface IProps {
 const HealthGuidePage = (props: IProps) => {
   const { children } = props;
   return (
-    // <div className={cn("container")}>
-    //   <div className={cn("sideMenuContainer")}>side</div>
-    // </div>
-    <>
-      <Panel size={SizeTheme.large} background={true} shadow={true}>
-        <div className={cn(`wrapper`)}>
-          <SideMenu></SideMenu>
+    <Panel
+      className={cn(`inCardPanel`)}
+      size={SizeTheme.large}
+      background={true}
+    >
+      <div className={cn(`wrapper`)}>
+        <SideMenu></SideMenu>
 
-          <div className={cn(`contentsArea`)}>contents</div>
-        </div>
-      </Panel>
-    </>
+        <div className={cn(`contentsArea`)}>contents</div>
+      </div>
+    </Panel>
   );
 };
 
