@@ -9,18 +9,19 @@ const cn = cb.bind(styles);
 
 interface IProps {
   data: sideMenuItemValueInterface;
+  className?: string;
+  onClick: any;
 }
 const SideMenuItem = (props: IProps) => {
-  const { data } = props;
+  const { data, className, onClick } = props;
 
   return (
-    <div className={cn(`container`)}>
+    <div className={cn(`container`, `${className}`)} onClick={onClick}>
       <div className={cn(`wrapper`, `icon`)}>
         {React.createElement(data.icon, {
           width: 20,
           height: 20,
-          color: "#bdbdbd",
-          className: "sideMenuIcon",
+          color: `${className === "active" ? `black` : "#bdbdbd"}`,
         })}
       </div>
       <div className={cn(`wrapper`, `title`)}>
