@@ -8,10 +8,12 @@ const cn = cb.bind(styles);
 const SideMenu = () => {
   return (
     <div className={cn(`container`)}>
-      <div className={cn(`wrapper`, `img`)}>
-        <img src={logo} alt="logo img"></img>
+      <div className={cn(`align`, `top`)}>
+        <div className={cn(`wrapper`, `img`)}>
+          <img src={logo} alt="logo img"></img>
+        </div>
+        <SideMenuList />
       </div>
-      <SideMenuList />
       <div className={cn(`wrapper`, `infoCard`)}>
         <InfoCard />
       </div>

@@ -4,13 +4,10 @@ import cb from "classnames/bind";
 import { Panel } from "../../component";
 import { SizeTheme } from "../../interface/style";
 import SideMenu from "./SideMenu";
+import MainContents from "./MainContents";
 const cn = cb.bind(styles);
 
-interface IProps {
-  children?: React.ReactNode;
-}
-const HealthGuidePage = (props: IProps) => {
-  const { children } = props;
+const HealthGuidePage = () => {
   return (
     <Panel
       className={cn(`inCardPanel`)}
@@ -19,8 +16,7 @@ const HealthGuidePage = (props: IProps) => {
     >
       <div className={cn(`wrapper`)}>
         <SideMenu></SideMenu>
-
-        <div className={cn(`contentsArea`)}>contents</div>
+        <MainContents></MainContents>
       </div>
     </Panel>
   );
