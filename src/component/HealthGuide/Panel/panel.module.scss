@@ -1,6 +1,7 @@
 .container {
   box-sizing: border-box;
   border-radius: 30px;
+  overflow: hidden;
 }
 
 .size {
@@ -8,7 +9,8 @@
     height: 100%;
   }
   &-medium {
-    height: 60%;
+    width: 17vw;
+    height: 35vh;
   }
 }
 

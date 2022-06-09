@@ -7,8 +7,8 @@ const cn = cb.bind(styles);
 const SearchInput = () => {
   return (
     <div className={cn(`container`)}>
-      <FiSearch color="#696969"></FiSearch>
-      <input className={cn(`searchInput`)} placeholder="Search"></input>
+      <FiSearch color="#696969" size={20} />
+      <input className={cn(`searchInput`)} placeholder="Search" />
     </div>
   );
 };

@@ -1,0 +1,22 @@
+.container {
+  // background-color: rgb(191, 226, 240);
+  height: 70%;
+  overflow: hidden;
+}
+.wrapper {
+  &.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 6vw;
+    p {
+      font-size: 3em;
+      font-weight: 700;
+    }
+    .arrow {
+      .firstArrow {
+        margin-right: 35px;
+      }
+    }
+  }
+}

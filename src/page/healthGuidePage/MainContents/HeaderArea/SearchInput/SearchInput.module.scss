@@ -1,10 +1,11 @@
 .container {
   width: 60%;
-  border-bottom: solid 2px rgb(56 55 55 / 5%);
+  border-bottom: solid 2px #3837370d;
   display: flex;
   align-items: center;
 }
 .searchInput {
   border: none;
   padding: 3px;
+  font-size: 1em;
 }
