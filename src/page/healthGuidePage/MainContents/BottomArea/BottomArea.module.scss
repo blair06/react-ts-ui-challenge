@@ -1,0 +1,33 @@
+.container {
+  height: 24%;
+  display: flex;
+}
+.wrapper {
+  &.text {
+    width: 13vw;
+    color: #bdbdbd;
+    margin-right: 45px;
+    :first-child {
+      font-size: 1.3em;
+      font-weight: 800;
+      color: black;
+      margin: 0;
+    }
+  }
+  &.card {
+    display: flex;
+  }
+}
+.bottomCard {
+  .moveContainer {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 30px;
+    top: -178px;
+    right: -21px;
+    .moonImg {
+      width: 40px;
+      height: 30px;
+    }
+  }
+}
