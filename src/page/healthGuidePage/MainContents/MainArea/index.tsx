@@ -5,8 +5,7 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
-import { Panel } from "../../../../component";
-import { SizeTheme } from "../../../../interface/style";
+
 import MainCard from "./MainCard";
 const cn = cb.bind(styles);
 const MainArea = () => {
