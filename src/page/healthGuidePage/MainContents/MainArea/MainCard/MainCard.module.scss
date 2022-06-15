@@ -1,0 +1,38 @@
+.container {
+  margin-right: 50px;
+}
+.wrapper {
+  &.colorTheme {
+    &-purple {
+      background: linear-gradient(to bottom, #dbd4ff, #c0e0fc);
+    }
+    &-green {
+      background: linear-gradient(to bottom, #dffe96, #9efca6);
+    }
+  }
+  &.card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    // background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxNzAyMTdfMTc4/MDAxNDg3MzE1NzAxNDg1.w4-bHtLJ2cqCUcAEB4sdpu7NolnZVMcfjNn--cx4EKEg.IGK1FpUllrIsJvnoe7Kdhl0uyc5k4HJ-0r3MVbVUH2sg.JPEG.lovelyse80/%EC%95%84%EC%9D%B4%ED%8F%B0%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4%ED%8C%8C%EC%8A%A4%ED%85%94%ED%86%A4%EB%8B%A8%EC%83%89%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98%EC%98%88%EC%81%9C%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4blue-purple.jpg?type=w2");
+    background-position: 0%;
+    box-shadow: inset 0px 0px 20px 0px white;
+    padding: 15px;
+
+    p {
+      position: relative;
+      bottom: 10px;
+      font-size: 1.5em;
+      font-weight: 700;
+      margin: 0 5px 5px 0;
+    }
+  }
+}
+
+.healthList {
+  width: 100%;
+  height: 100%;
+}

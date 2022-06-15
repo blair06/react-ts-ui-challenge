@@ -1,0 +1,25 @@
+.container {
+  margin: 5px 0;
+}
+.wrapper {
+  &.title {
+    :first-child {
+      margin: 0;
+      font-size: 13px;
+      color: #c9d9fb;
+      font-weight: 600;
+    }
+  }
+  &.data {
+    margin: 0;
+
+    display: flex;
+    :first-child {
+      font-weight: 800;
+      margin-right: 5px;
+    }
+    p {
+      margin-top: 5px;
+    }
+  }
+}

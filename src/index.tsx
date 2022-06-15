@@ -2,7 +2,7 @@ import React from "react";
 import "./style/reset.css";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomeMainPage from "./page/HomeMainPage";
+import HealthGuidePage from "./page/healthGuidePage/healthGuidePage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,14 +11,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-        <Routes>
-          <Route
-            path='/home'
-            element={
-                <HomeMainPage />
-            }
-          />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<HealthGuidePage />} />
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );

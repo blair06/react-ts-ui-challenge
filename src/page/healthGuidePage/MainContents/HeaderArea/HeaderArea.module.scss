@@ -1,0 +1,24 @@
+.wrapper {
+  &.header {
+    display: flex;
+    height: 6%;
+    width: 100%;
+    // background-color: beige;
+    align-items: center;
+    span {
+      font-weight: 600;
+    }
+    .left {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+    }
+    .right {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      justify-content: flex-end;
+      padding-right: 3vw;
+    }
+  }
+}

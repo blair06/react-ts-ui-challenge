@@ -1,0 +1,36 @@
+.container {
+  box-sizing: border-box;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.size {
+  &-large {
+    height: 100%;
+  }
+  &-medium {
+    width: 24vw;
+    height: 40vh;
+  }
+}
+
+.border {
+  &-solid {
+    border: solid 1px #eff2f1;
+  }
+  &-dashed {
+    border: dashed 2px #eff2f1;
+  }
+}
+
+.background {
+  &-true {
+    background-color: #ffffff;
+  }
+}
+
+.shadow {
+  &-true {
+    box-shadow: 10px 17px 20px 0px #dce3ef78;
+  }
+}
