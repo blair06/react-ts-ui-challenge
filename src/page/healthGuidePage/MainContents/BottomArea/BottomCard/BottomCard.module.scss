@@ -1,0 +1,39 @@
+.container {
+  width: 11vw;
+  height: 20vh;
+  overflow: hidden;
+  margin-right: 50px;
+}
+.wrapper {
+  p {
+    margin: 0;
+  }
+  &.contents {
+    padding: 20px;
+    min-height: 150px;
+
+    .icon {
+      position: relative;
+      display: inline;
+      top: -4px;
+      left: 77px;
+    }
+    .title {
+      font-weight: 900;
+      font-size: 1em;
+      //   margin-bottom: 5vh;
+    }
+    .test {
+      font-weight: 900;
+      font-size: 1.2em;
+    }
+    .time {
+      font-size: 0.9em;
+      color: #bdbdbd;
+    }
+  }
+}
+.cardItemBlack {
+  background-color: black;
+  color: white;
+}
