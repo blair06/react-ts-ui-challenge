@@ -1,8 +1,9 @@
 import React, { ReactNode } from "react";
 import styles from "./MainCard.module.scss";
 import cb from "classnames/bind";
-import { Panel } from "../../../../../component";
-import { SizeTheme } from "../../../../../interface/style";
+import Panel from "component/healthGuide/panel";
+
+import { SizeTheme } from "interface/style";
 const cn = cb.bind(styles);
 
 export enum MainCardColorTheme {

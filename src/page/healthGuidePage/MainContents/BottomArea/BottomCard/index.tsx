@@ -1,8 +1,9 @@
 import React, { ReactNode } from "react";
 import styles from "./BottomCard.module.scss";
 import cb from "classnames/bind";
-import { Panel } from "../../../../../component";
-import { BorderTheme } from "../../../../../interface/style";
+import Panel from "component/healthGuide/panel";
+
+import { BorderTheme } from "interface/style";
 
 const cn = cb.bind(styles);
 
