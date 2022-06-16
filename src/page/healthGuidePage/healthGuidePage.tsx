@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./healthGuidePage.module.scss";
 import cb from "classnames/bind";
-import { Panel } from "../../component";
-import { SizeTheme } from "../../interface/style";
+import Panel from "component/healthGuide/panel";
+import { SizeTheme } from "interface/style";
 import SideMenu from "./SideMenu";
 import MainContents from "./MainContents";
 const cn = cb.bind(styles);
