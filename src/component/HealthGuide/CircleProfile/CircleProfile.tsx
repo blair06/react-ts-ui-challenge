@@ -7,11 +7,12 @@ const cn = cb.bind(styles);
 interface IProps {
   img: string;
   shadow?: true;
+  className?: string;
 }
 const CircleProfile = (props: IProps) => {
-  const { img, shadow = false } = props;
+  const { img, shadow = false, className } = props;
   return (
-    <div className={cn(`container`, `${shadow}`)}>
+    <div className={cn(`container`, shadow, className)}>
       <div className={cn(`wrapper`)}>
         <img className={cn(`profileImg`)} src={img} alt="circle profile" />
       </div>

@@ -1,0 +1,51 @@
+@import "style/payrollSystemColorPalette.scss";
+
+.container {
+  width: 83%;
+  height: 100%;
+  padding: 1vh 3vw;
+  box-sizing: border-box;
+}
+.wrapper {
+  &.header {
+    width: 100%;
+    display: flex;
+  }
+  &.title {
+    width: 55%;
+    font-size: 3em;
+    font-weight: 500;
+    color: $color-navy;
+    margin: 0;
+  }
+  &.profile {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .profileImg {
+      width: 60px;
+      height: 60px;
+    }
+    p {
+      margin: 0 30px 0 5px;
+      color: $color-navy;
+      font-size: 1.5em;
+    }
+  }
+  &.contents {
+    width: 100%;
+    border: 2px dashed $color-sky-blue;
+  }
+}
+.settings {
+  background-color: $color-blue;
+  border-radius: 50px;
+  height: 36px;
+  padding: 3px;
+
+  svg {
+    align-items: center;
+    display: flex;
+  }
+}

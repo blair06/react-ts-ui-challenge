@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import styles from "./MainCard.module.scss";
 import cb from "classnames/bind";
-import Panel from "component/healthGuide/panel";
+import Panel from "component/panel";
 
 import { SizeTheme } from "interface/style";
 const cn = cb.bind(styles);

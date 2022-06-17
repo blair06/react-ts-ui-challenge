@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./InfoCard.module.scss";
 import cb from "classnames/bind";
-import Panel from "component/healthGuide/panel";
+import Panel from "component/panel";
 import { SizeTheme } from "interface/style";
 import InfoCardItem from "./InfoCardItem/InfoCardItem";
 import { InfoCardItemValue } from "./mockupData";

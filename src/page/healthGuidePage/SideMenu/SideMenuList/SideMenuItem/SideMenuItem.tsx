@@ -2,8 +2,6 @@ import React from "react";
 import { sideMenuItemValueInterface } from "./mockupData";
 import styles from "./SideMenuItem.module.scss";
 import cb from "classnames/bind";
-import { FaRegEye } from "react-icons/fa";
-import { IconBase } from "react-icons";
 
 const cn = cb.bind(styles);
 

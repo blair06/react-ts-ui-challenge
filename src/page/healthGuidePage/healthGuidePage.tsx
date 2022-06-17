@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./healthGuidePage.module.scss";
 import cb from "classnames/bind";
-import Panel from "component/healthGuide/panel";
+import Panel from "component/panel";
 import { SizeTheme } from "interface/style";
 import SideMenu from "./SideMenu";
 import MainContents from "./MainContents";
@@ -15,8 +15,8 @@ const HealthGuidePage = () => {
       background={true}
     >
       <div className={cn(`wrapper`)}>
-        <SideMenu></SideMenu>
-        <MainContents></MainContents>
+        <SideMenu />
+        <MainContents />
       </div>
     </Panel>
   );
