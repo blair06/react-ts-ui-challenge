@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./healthGuidePage.module.scss";
 import cb from "classnames/bind";
-import Panel from "component/healthGuide/panel";
+import Panel from "component/HealthGuide/panel";
 import { SizeTheme } from "interface/style";
 import SideMenu from "./SideMenu";
 import MainContents from "./MainContents";
