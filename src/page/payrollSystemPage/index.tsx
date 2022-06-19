@@ -1,15 +1,16 @@
 import React from "react";
-import style from "./payrollSystemPage.module.scss";
-import cb from "classnames";
+import SideMenuArea from "./sideMenuArea";
+import styles from "./payrollSystemPage.module.scss";
+import cb from "classnames/bind";
 import MainArea from "./mainArea";
 
-const cn = cb.bind(style);
+const cn = cb.bind(styles);
 const PayrollSystemPage = () => {
   return (
-    <>
-      <div className={cn(`sideMenuTest`)}></div>
-      <MainArea></MainArea>
-    </>
+    <div className={cn(`container`)}>
+      <SideMenuArea />
+      <MainArea />
+    </div>
   );
 };
 

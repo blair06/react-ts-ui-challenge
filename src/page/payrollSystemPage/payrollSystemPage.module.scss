@@ -1,3 +1,12 @@
-.sideMenuTest {
-  width: 20%;
+@import "style/payrollSystemColorPalette.scss";
+
+body {
+  background-color: $on-background;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }

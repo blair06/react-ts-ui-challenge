@@ -1,0 +1,44 @@
+@import "style/payrollSystemColorPalette.scss";
+.container {
+  width: 17%;
+
+  height: 100%;
+  background-color: $color-blue;
+}
+.wrapper {
+  &.top {
+    padding: 1.1vw 1.5vw;
+  }
+
+  &.circleLogo {
+    width: 70px;
+    height: 70px;
+    background-color: $color-white;
+    border-radius: 100px;
+    overflow: hidden;
+    .circleLogo-white {
+      width: 50%;
+      height: 100%;
+      background-color: $color-light-blue;
+      z-index: 20;
+    }
+  }
+
+  &.search {
+    width: 100%;
+    padding: 2vh 1.5vw 0vw 1.5vw;
+  }
+}
+
+.searchInput {
+  width: 100% !important;
+  padding: 10px;
+  background-color: $color-light-blue;
+  border-radius: 10px;
+  input {
+    background-color: transparent;
+    &::placeholder {
+      color: $color-sky-blue;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import styles from "./BottomCard.module.scss";
 import cb from "classnames/bind";
-import Panel from "component/HealthGuide/panel";
+import Panel from "component/panel";
 
 import { BorderTheme } from "interface/style";
 

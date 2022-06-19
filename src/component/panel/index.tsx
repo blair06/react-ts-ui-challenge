@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./panel.module.scss";
 import cb from "classnames/bind";
-import { BorderTheme, SizeTheme } from "../../../interface/style";
+import { BorderTheme, SizeTheme } from "../../interface/style";
 const cn = cb.bind(styles);
 
 interface IProps {
