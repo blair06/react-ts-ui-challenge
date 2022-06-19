@@ -44,7 +44,8 @@ const MainArea = () => {
                 src={
                   "https://us.123rf.com/450wm/yupiramos/yupiramos1904/yupiramos190417905/123390180-%EC%B2%AD%EC%A7%84%EA%B8%B0-%EC%8B%AC%EC%9E%A5-%EC%9E%A5%EC%B9%98-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%94%94%EC%9E%90%EC%9D%B8.jpg?ver=6"
                 }
-              ></img>
+                alt="icon"
+              />
             </div>
           </div>
         </MainCard>

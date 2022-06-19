@@ -1,0 +1,95 @@
+@import "style/payrollSystemColorPalette.scss";
+.gr {
+  height: 200px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  &.info {
+    width: 60%;
+    height: 100%;
+  }
+  &.calender {
+    width: 40%;
+    height: 100%;
+    .calenderPanel {
+      height: 100%;
+    }
+  }
+}
+.infoSection {
+  display: grid;
+  grid-template-columns: 200px 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.infoPanel {
+  width: 90%;
+  box-shadow: 0px 2px 16px 0px #00000052;
+  &.first {
+    // height: 25vh;
+    height: 100%;
+  }
+  &.second {
+    // height: 100%;
+    margin-bottom: 5vh;
+  }
+  &.third {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    margin-top: 5vh;
+    padding: 5px 10px;
+    background-color: $color-blue;
+
+    p:first-child {
+      color: $color-white;
+    }
+    p:nth-child(2) {
+      color: $color-sky-blue;
+      margin-top: 0;
+      font-size: 0.7em;
+    }
+    .time {
+      background-color: $color-light-blue;
+      border-radius: 100px;
+      display: inline;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      width: 50%;
+      p {
+        margin: 0;
+        font-size: 0.7em;
+      }
+    }
+    .wrapper_profile {
+      display: flex;
+      align-items: flex-end;
+      :nth-child(2) {
+        position: relative;
+        right: 33px;
+      }
+    }
+  }
+  &.fourth {
+    // height: 15vh;
+    height: 100%;
+  }
+  &.fifth {
+    width: 95%;
+    margin-top: 5vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
