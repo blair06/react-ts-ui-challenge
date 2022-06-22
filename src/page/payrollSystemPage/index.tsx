@@ -8,8 +8,10 @@ const cn = cb.bind(styles);
 const PayrollSystemPage = () => {
   return (
     <div className={cn(`container`)}>
-      <SideMenuArea />
-      <MainArea />
+      <div className={cn(`wrapper`)}>
+        <SideMenuArea />
+        <MainArea />
+      </div>
     </div>
   );
 };

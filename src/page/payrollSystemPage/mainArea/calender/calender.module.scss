@@ -1,0 +1,15 @@
+@import "style/payrollSystemColorPalette.scss";
+
+.wrapper {
+  &.header {
+    width: 100%;
+    display: flex;
+    .title {
+      width: 55%;
+      font-size: 3em;
+      font-weight: 500;
+      color: $color-navy;
+      margin: 0;
+    }
+  }
+}

@@ -9,7 +9,7 @@ const cn = cb.bind(style);
 const MainArea = () => {
   return (
     <MainAreaLayout>
-      <MainContents></MainContents>
+      <MainContents />
     </MainAreaLayout>
   );
 };
