@@ -12,10 +12,12 @@ const CircleBtn = (props: CircleBtnProps) => {
   const { imgURL, title = "title", className } = props;
   return (
     <div className={cn(`container`, className)}>
-      <div className={cn(`wrapper`, `img`)}>
-        <img src={imgURL} alt="img" />
+      <div className={cn(`wrapper`)}>
+        <div className={cn(`wrapper`, `img`)}>
+          <img src={imgURL} alt="img" />
+        </div>
+        <p>{title}</p>
       </div>
-      <p>{title}</p>
     </div>
   );
 };

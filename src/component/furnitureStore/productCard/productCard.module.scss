@@ -1,6 +1,8 @@
 @import "style/furnitureStoreColorPalette.scss";
 
 .container {
+  display: inline-block;
+  margin-right: 3%;
   width: 40%;
   background-color: $color-light-gray;
   padding: 5%;
@@ -36,8 +38,8 @@
 }
 .heart_Icon {
   position: relative;
-  bottom: 109px;
-  left: 103px;
+  bottom: 26vw;
+  left: -3vw;
   &.active {
     color: rgb(243, 130, 130) !important;
   }
@@ -46,4 +48,9 @@
   background-color: black;
   border-radius: 100px;
   padding: 5%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

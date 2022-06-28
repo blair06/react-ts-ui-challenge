@@ -10,12 +10,19 @@ interface ProductCardProps {
   title?: string;
   price?: string;
   className?: string;
+  onClick?: () => void;
 }
 const ProductCard = (props: ProductCardProps) => {
-  const { imgURL, title = "title", price, className } = props;
+  const {
+    imgURL,
+    title = "title",
+    price = "30.00",
+    onClick,
+    className,
+  } = props;
   const [heart, setHeart] = useState<boolean>(false);
   return (
-    <div className={cn(`container`)}>
+    <div className={cn(`container`)} onClick={onClick}>
       <div className={cn(`wrapper`, `img`)}>
         <img src={imgURL} alt="productImg" />
         <AiOutlineHeart
@@ -33,7 +40,7 @@ const ProductCard = (props: ProductCardProps) => {
           <p>${price}</p>
         </div>
         <div className={cn(`circleBtn`)}>
-          <BsHandbagFill color="#fff" />
+          <BsHandbagFill color="#fff" size={15} />
         </div>
       </div>
     </div>
