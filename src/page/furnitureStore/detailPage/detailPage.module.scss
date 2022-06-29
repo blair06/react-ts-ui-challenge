@@ -1,0 +1,58 @@
+@import "style/furnitureStoreColorPalette.scss";
+
+.productCard {
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  margin-bottom: 8vw;
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+  .name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  .readMore {
+    font-weight: 800;
+  }
+  .colorBtn {
+    margin-right: $padding-horizontal;
+  }
+}
+.wrapper_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-orange;
+  }
+  .amount {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 7px;
+    width: 22vw;
+    justify-content: center;
+    p {
+      font-size: 1.5rem;
+      margin: 10px;
+      font-weight: 600;
+    }
+  }
+}
+.carousel {
+  margin-top: 2%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

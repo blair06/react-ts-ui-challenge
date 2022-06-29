@@ -1,0 +1,20 @@
+.container {
+  display: inline-block;
+  &.selected {
+    .wrapper {
+      border: 1px solid black;
+    }
+  }
+}
+.wrapper {
+  width: 10vw;
+  height: 10vw;
+  display: inline-block;
+  padding: 5%;
+  border-radius: 100px;
+  .colorFill {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+  }
+}

@@ -10,6 +10,7 @@ interface ProductCardProps {
   title?: string;
   price?: string;
   className?: string;
+  info?: boolean;
   onClick?: () => void;
 }
 const ProductCard = (props: ProductCardProps) => {
@@ -18,31 +19,36 @@ const ProductCard = (props: ProductCardProps) => {
     title = "title",
     price = "30.00",
     onClick,
+    info = true,
     className,
   } = props;
   const [heart, setHeart] = useState<boolean>(false);
   return (
-    <div className={cn(`container`)} onClick={onClick}>
+    <div className={cn(`container`, className)} onClick={onClick}>
       <div className={cn(`wrapper`, `img`)}>
         <img src={imgURL} alt="productImg" />
-        <AiOutlineHeart
-          className={cn(`heart_Icon`, heart && `active`)}
-          color={"#acacac"}
-          size={15}
-          onClick={() => {
-            setHeart(!heart);
-          }}
-        />
+        {info && (
+          <AiOutlineHeart
+            className={cn(`heart_Icon`, heart && `active`)}
+            color={"#acacac"}
+            size={15}
+            onClick={() => {
+              setHeart(!heart);
+            }}
+          />
+        )}
       </div>
-      <div className={cn(`wrapper`, `contents`)}>
-        <div className={cn(`info`)}>
-          <p>{title}</p>
-          <p>${price}</p>
+      {info && (
+        <div className={cn(`wrapper`, `contents`)}>
+          <div className={cn(`info`)}>
+            <p>{title}</p>
+            <p>${price}</p>
+          </div>
+          <div className={cn(`circleBtn`)}>
+            <BsHandbagFill color="#fff" size={15} />
+          </div>
         </div>
-        <div className={cn(`circleBtn`)}>
-          <BsHandbagFill color="#fff" size={15} />
-        </div>
-      </div>
+      )}
     </div>
   );
 };
